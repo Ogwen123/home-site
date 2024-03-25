@@ -1,44 +1,33 @@
 import React from 'react'
+import SiteChip from './SiteChip'
 
-type SiteInfo = {
-    name: string,
-    url: string,
-    staging_url: string,
-    description: string,
-    github_url: string
-}
+import { sites } from '../utils/sites'
 
 const Home = () => {
-
     React.useEffect(() => { }, [])
-
-    const sites: SiteInfo[] = [
-        {
-            name: "SQLite Generator",
-            url: "sql.ogwen.eu.org",
-            staging_url: "",
-            description: "Generate SQLite code for creating tables using a UI. The generated code should also work for most other SQL databases like postgres. Lacks some advanced options for creating tables.",
-            github_url: ""
-        },
-        {
-            name: "Markdown table generator",
-            url: "table.ogwen.eu.org",
-            staging_url: "table-stg.ogwen.eu.org",
-            description: "Easily create markdown tables using a UI.",
-            github_url: ""
-        }
-    ]
 
     return (
         <div>
-            <div>Home</div>
+            <div className='flex justify-center text-4xl m-[10px]'>Sites</div>
             {
-                sites.map((site, index) => {
-                    return (
-                        <div key={index}>
-                            {site.name}
-                        </div>
-                    )
+                Object.values(sites).map((site, index) => {
+                    if (site.shared) return
+                    else {
+                        return (
+                            <SiteChip site={site} key={index} />
+                        )
+                    }
+                })
+            }
+            <div className='flex justify-center text-4xl m-[10px]'>Shared Sites</div>
+            {
+                Object.values(sites).map((site, index) => {
+                    if (!site.shared || (site.shared as boolean) === false) return
+                    else {
+                        return (
+                            <SiteChip site={site} key={index} />
+                        )
+                    }
                 })
             }
         </div>

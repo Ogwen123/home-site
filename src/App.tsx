@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import Home from './components/Home'
 import PageHandler from './PageHandler'
+import Site from './components/Site'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<PageHandler />}>
           <Route index element={<Home />} />
+          <Route path="/site/:id" element={<Site />} />
         </Route>
       </Routes>
     </div>
