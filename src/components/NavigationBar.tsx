@@ -1,5 +1,3 @@
-import React from 'react'
-
 const NavigationBar = () => {
     return (
         <div className='flex items-center px-[20px] h-[10vh] bg-bgdark text-2xl'>

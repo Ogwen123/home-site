@@ -10,6 +10,8 @@ type SiteInfo = {
 
 const Home = () => {
 
+    React.useEffect(() => { }, [])
+
     const sites: SiteInfo[] = [
         {
             name: "SQLite Generator",
@@ -28,7 +30,18 @@ const Home = () => {
     ]
 
     return (
-        <div>Home</div>
+        <div>
+            <div>Home</div>
+            {
+                sites.map((site, index) => {
+                    return (
+                        <div key={index}>
+                            {site.name}
+                        </div>
+                    )
+                })
+            }
+        </div>
     )
 }
 
