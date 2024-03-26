@@ -4,7 +4,7 @@ export const sites: SiteInfo[] = [
     {
         id: 1,
         name: "SQLite Generator",
-        url: "sql.ogwen.eu.org",
+        url: "https://sql.ogwen.eu.org",
         staging_url: "",
         description: "Generate SQLite code for creating tables using a UI. The generated code should also work for most other SQL databases like postgres. Lacks some advanced options for creating tables.",
         github_url: "https://github.com/Ogwen123/sql-builder",
@@ -13,8 +13,8 @@ export const sites: SiteInfo[] = [
     {
         id: 2,
         name: "Markdown table generator",
-        url: "table.ogwen.eu.org",
-        staging_url: "table-stg.ogwen.eu.org",
+        url: "https://table.ogwen.eu.org",
+        staging_url: "https://table-stg.ogwen.eu.org",
         description: "Easily create markdown tables using a UI.",
         github_url: "https://github.com/Ogwen123/md-table-generator",
         colour: "#009788"
@@ -22,7 +22,7 @@ export const sites: SiteInfo[] = [
     {
         id: 3,
         name: "Design",
-        url: "design.ogwen.eu.org",
+        url: "https://design.ogwen.eu.org",
         staging_url: "",
         description: "Define some design rules for my websites, currently only has colours.",
         github_url: "https://github.com/Ogwen123/design",
@@ -31,7 +31,7 @@ export const sites: SiteInfo[] = [
     {
         id: 4,
         name: "Cards",
-        url: "cards.benja.eu.org",
+        url: "https://cards.benja.eu.org",
         staging_url: "",
         description: "Flashcard site. Like quizlet but without the stupid paywalls for basic features.",
         github_url: "",
