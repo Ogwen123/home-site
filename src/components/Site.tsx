@@ -73,7 +73,7 @@ const Site = () => {
                                     <a href={siteData.github_url} className='w-[25%]'><button className={"button " + (!siteData.github_url ? "opacity-50 bg-maindark" : "")} disabled={siteData.github_url === undefined} title={siteData.github_url === undefined ? "Repo is most likely private" : ""}>View Github Repo</button></a>
                                     <a href={siteData.staging_url} className='w-[25%]'><button className={"button " + (!siteData.staging_url ? "opacity-50 bg-maindark" : "")} disabled={siteData.staging_url === undefined} title={siteData.staging_url === undefined ? "This site does not have a staging site" : ""}>Go To Staging Site</button></a>
                                 </div>
-                                <div className='bg-bgdark rounded-lg flex flex-row h-[300px] p-[10px] text-lg'>
+                                <div className='bg-bgdark rounded-lg flex flex-row h-[300px] p-[20px] text-lg'>
                                     <div className='w-1/2 flex flex-col'>
                                         {
                                             statusData.current_deployment ?
