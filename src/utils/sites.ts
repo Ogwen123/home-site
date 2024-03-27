@@ -3,16 +3,18 @@ import { SiteInfo } from "../global/types";
 export const sites: SiteInfo[] = [
     {
         id: 1,
-        name: "SQLite Generator",
+        name: "sql-builder",
+        alias: "SQLite Generator",
         url: "https://sql.ogwen.eu.org",
-        staging_url: "",
         description: "Generate SQLite code for creating tables using a UI. The generated code should also work for most other SQL databases like postgres. Lacks some advanced options for creating tables.",
         github_url: "https://github.com/Ogwen123/sql-builder",
         colour: "#4a148c"
     },
     {
         id: 2,
-        name: "Markdown table generator",
+        name: "md-table-generator",
+        staging_name: "table-stg",
+        alias: "Markdown table generator",
         url: "https://table.ogwen.eu.org",
         staging_url: "https://table-stg.ogwen.eu.org",
         description: "Easily create markdown tables using a UI.",
@@ -21,20 +23,28 @@ export const sites: SiteInfo[] = [
     },
     {
         id: 3,
-        name: "Design",
+        name: "design",
+        alias: "Design",
         url: "https://design.ogwen.eu.org",
-        staging_url: "",
         description: "Define some design rules for my websites, currently only has colours.",
         github_url: "https://github.com/Ogwen123/design",
         colour: "#2563eb"
     },
     {
         id: 4,
-        name: "Cards",
+        name: "home-site",
+        alias: "This Website",
+        url: "https://ogwen.eu.org",
+        description: "This website.",
+        github_url: "https://github.com/Ogwen123/home-site",
+        colour: "#4a148c"
+    },
+    {
+        id: 5,
+        name: "",
+        alias: "Cards",
         url: "https://cards.benja.eu.org",
-        staging_url: "",
         description: "Flashcard site. Like quizlet but without the stupid paywalls for basic features.",
-        github_url: "",
         colour: "#009788",
         shared: true
     }
