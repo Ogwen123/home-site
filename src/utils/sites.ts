@@ -17,7 +17,7 @@ export const sites: SiteInfo[] = [
         alias: "Markdown table generator",
         url: "https://table.ogwen.eu.org",
         staging_url: "https://table-stg.ogwen.eu.org",
-        description: "Easily create markdown tables using a UI.",
+        description: "Easily create markdown tables using a UI. The backend for this site is currently broken but you can still generate tables.",
         github_url: "https://github.com/Ogwen123/md-table-generator",
         colour: "#009788"
     },

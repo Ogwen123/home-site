@@ -1,9 +1,9 @@
 // import React from "react"
 import { Route, Routes } from 'react-router-dom'
 
-import Home from './components/Home'
+import Home from './components/routes/Home'
 import PageHandler from './PageHandler'
-import Site from './components/Site'
+import Site from './components/routes/Site'
 
 const App = () => {
   return (

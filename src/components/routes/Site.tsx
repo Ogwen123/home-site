@@ -1,7 +1,7 @@
 import React from 'react'
-import getStatus from "../utils/getStatus"
-import { SiteInfo, SiteStatus } from '../global/types'
-import { getSite } from '../utils/sites'
+import getStatus from "../../utils/getStatus"
+import { SiteInfo, SiteStatus } from '../../global/types'
+import { getSite } from '../../utils/sites'
 
 const Site = () => {
 
@@ -37,27 +37,27 @@ const Site = () => {
             {
                 statusData === true ?
                     <div>
-                        <div className='w-full h-[200px] bg-bgdark rounded-lg p-[20px] text-3xl mb-[10px]'>
+                        <div className='w-full h-[200px] bg-bgdark rounded-md p-[20px] text-3xl mb-[10px]'>
                             <div>
                                 Loading...
                             </div>
 
                         </div>
-                        <div className='w-full h-[75px] bg-bgdark rounded-lg p-[10px] mb-[10px] flex flex-row justify-between'>
+                        <div className='w-full h-[75px] bg-bgdark rounded-md p-[10px] mb-[10px] flex flex-row justify-between'>
 
                         </div>
-                        <div className='bg-bgdark rounded-lg flex flex-row h-[300px] p-[10px] text-lg'>
+                        <div className='bg-bgdark rounded-md flex flex-row h-[300px] p-[10px] text-lg'>
 
                         </div>
                     </div>
 
                     :
                     statusData === false ?
-                        <div className='w-full h-[200px] bg-bgdark rounded-lg p-[20px] text-3xl'>Unable to fetch status data for this site{siteData === undefined ? " as it does not exist." : ". This could be because it does not exist."}</div>
+                        <div className='w-full h-[200px] bg-bgdark rounded-md p-[20px] text-3xl'>Unable to fetch status data for this site{siteData === undefined ? " as it does not exist." : ". This could be because it does not exist."}</div>
                         :
                         statusData && siteData ?
                             <div>
-                                <div className='w-full h-[200px] bg-bgdark rounded-lg p-[20px] text-3xl mb-[10px]'>
+                                <div className='w-full h-[200px] bg-bgdark rounded-md p-[20px] text-3xl mb-[10px]'>
                                     <div style={{
                                         color: siteData.colour
                                     }}>
@@ -68,12 +68,12 @@ const Site = () => {
                                         {siteData.description}
                                     </div>
                                 </div>
-                                <div className='w-full h-[75px] bg-bgdark rounded-lg p-[10px] mb-[10px] flex flex-row justify-between'>
+                                <div className='w-full h-[75px] bg-bgdark rounded-md p-[10px] mb-[10px] flex flex-row justify-between'>
                                     <a href={siteData.url} className='w-[25%]'><button className="button">Go To Site</button></a>
                                     <a href={siteData.github_url} className='w-[25%]'><button className={"button " + (!siteData.github_url ? "opacity-50 bg-maindark" : "")} disabled={siteData.github_url === undefined} title={siteData.github_url === undefined ? "Repo is most likely private" : ""}>View Github Repo</button></a>
                                     <a href={siteData.staging_url} className='w-[25%]'><button className={"button " + (!siteData.staging_url ? "opacity-50 bg-maindark" : "")} disabled={siteData.staging_url === undefined} title={siteData.staging_url === undefined ? "This site does not have a staging site" : ""}>Go To Staging Site</button></a>
                                 </div>
-                                <div className='bg-bgdark rounded-lg flex flex-row h-[300px] p-[20px] text-lg'>
+                                <div className='bg-bgdark rounded-md flex flex-row h-[300px] p-[20px] text-lg'>
                                     <div className='w-1/2 flex flex-col'>
                                         {
                                             statusData.current_deployment ?
@@ -82,7 +82,7 @@ const Site = () => {
                                                         Current Deployment
                                                     </div>
                                                     <div className='flex flex-row'>
-                                                        Status: <div className={'ml-[10px] ' + (statusData.current_deployment.status === "success" ? "text-success" : "text-error")}>{statusData.current_deployment.status.toUpperCase()}</div>
+                                                        Status: <div className={'ml-[10px] ' + (["success", "active"].includes(statusData.current_deployment.status) ? "text-success" : "text-error")}>{statusData.current_deployment.status.toUpperCase()}</div>
                                                     </div>
                                                     <div>Deployment time: {statusData.current_deployment.created_on.split("T").splice(0, 1).join(" ") + " " + statusData.current_deployment.created_on.split("T").splice(1, 2).join(" ").split(".")[0]}</div>
                                                     {
@@ -104,7 +104,7 @@ const Site = () => {
                                             statusData.latest_deployment ?
                                                 <div>
                                                     <div className='flex flex-row'>
-                                                        Status: <div className={'ml-[10px] ' + (statusData.latest_deployment.status === "success" ? "text-success" : "text-error")}>{statusData.latest_deployment.status.toUpperCase()}</div>
+                                                        Status: <div className={'ml-[10px] ' + (["success", "active"].includes(statusData.latest_deployment.status) ? "text-success" : "text-error")}>{statusData.latest_deployment.status.toUpperCase()}</div>
                                                     </div>
                                                     <div>Deployment time: {statusData.latest_deployment.created_on.split("T").splice(0, 1).join(" ") + " " + statusData.latest_deployment.created_on.split("T").splice(1, 2).join(" ").split(".")[0]}</div>
                                                     {
@@ -120,7 +120,7 @@ const Site = () => {
                                 </div>
                             </div>
                             :
-                            <div className='w-full h-[200px] bg-bgdark rounded-lg p-[20px] text-3xl'>Unable to fetch status data for this site as it does not exist.</div>
+                            <div className='w-full h-[200px] bg-bgdark rounded-md p-[20px] text-3xl'>Unable to fetch status data for this site as it does not exist.</div>
             }
         </div>
     )

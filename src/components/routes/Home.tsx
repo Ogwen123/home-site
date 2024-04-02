@@ -1,7 +1,7 @@
 import React from 'react'
-import SiteChip from './SiteChip'
+import SiteChip from '../SiteChip'
 
-import { sites } from '../utils/sites'
+import { sites } from '../../utils/sites'
 
 const Home = () => {
     React.useEffect(() => { }, [])
