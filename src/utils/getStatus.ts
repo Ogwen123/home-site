@@ -1,5 +1,5 @@
 export default async (site_name: string) => {
-    const res = await fetch("https://home-api.owen-services.eu.org/api/project_info", {
+    const res = await fetch("https://home-api.owen-services.eu.org/api/project-info", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
