@@ -2,6 +2,15 @@ import { SiteInfo } from "../global/types";
 
 export const sites: SiteInfo[] = [
     {
+        id: 0,
+        name: "tracker",
+        alias: "Tracker",
+        url: "https://tracker.ogwen.eu.org",
+        description: "Create repeatable tasks and track your progress.",
+        github_url: "https://github.com/Ogwen123/tracker-site",
+        colour: "#00796d"
+    },
+    {
         id: 1,
         name: "sql-builder",
         alias: "SQLite Generator",
