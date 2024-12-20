@@ -6,7 +6,7 @@ export const sites: SiteInfo[] = [
         name: "tracker",
         alias: "Tracker",
         url: "https://tracker.ogwen.eu.org",
-        description: "Create repeatable tasks and track your progress.",
+        description: "Create repeatable tasks and track your progress. WIP",
         github_url: "https://github.com/Ogwen123/tracker-site",
         colour: "#00796d"
     },
@@ -26,7 +26,7 @@ export const sites: SiteInfo[] = [
         alias: "Markdown table generator",
         url: "https://table.ogwen.eu.org",
         staging_url: "https://table-stg.ogwen.eu.org",
-        description: "Easily create markdown tables using a UI. The backend for this site is currently broken but you can still generate tables.",
+        description: "Easily create markdown tables using a UI.",
         github_url: "https://github.com/Ogwen123/md-table-generator",
         colour: "#009788"
     },
@@ -53,7 +53,7 @@ export const sites: SiteInfo[] = [
         name: "",
         alias: "Cards",
         url: "https://cards.benja.eu.org",
-        description: "Flashcard site. Like quizlet but without the stupid paywalls for basic features.",
+        description: "Flashcard site. Like quizlet but without the stupid paywalls for basic features. CURRENTLY THE BACKEND IS NOT HOSTED SO YOU CANNOT USE THE SITE.",
         colour: "#009788",
         shared: true
     }

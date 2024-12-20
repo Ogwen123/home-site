@@ -7,11 +7,41 @@
     src: url("/src/assets/poppins.ttf");
 }
 
+@font-face {
+    font-family: "title";
+    src: url("/src/assets/title.ttf");
+}
+
 body {
     margin: 0;
     font-family: "poppins", sans-serif;
     background-color: #22272e;
     color: white;
+}
+
+.custom-shape-divider-bottom-1734722500 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1734722500 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 248px;
+}
+
+.custom-shape-divider-bottom-1734722500 .shape-fill {
+    fill: #009788;
+}
+
+.title {
+    font-family: "title", sans-serif;
 }
 
 @layer components {

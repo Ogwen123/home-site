@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './components/routes/Home'
 import PageHandler from './PageHandler'
 import Site from './components/routes/Site'
+import Sites from "./components/routes/Sites"
 
 const App = () => {
 
@@ -43,6 +44,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<PageHandler />}>
               <Route index element={<Home />} />
+              <Route path="/sites" element={<Sites />} />
               <Route path="/site/:id" element={<Site />} />
             </Route>
           </Routes>
