@@ -5,6 +5,7 @@ import Home from './components/routes/Home'
 import PageHandler from './PageHandler'
 import Site from './components/routes/Site'
 import Sites from "./components/routes/Sites"
+import Projects from "./components/routes/Projects"
 
 const App = () => {
 
@@ -46,6 +47,7 @@ const App = () => {
               <Route index element={<Home />} />
               <Route path="/sites" element={<Sites />} />
               <Route path="/site/:id" element={<Site />} />
+              <Route path="/projects" element={<Projects />} />
             </Route>
           </Routes>
           :

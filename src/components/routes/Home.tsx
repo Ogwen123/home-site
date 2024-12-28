@@ -15,9 +15,24 @@ const Home = () => {
             <div className='fc flex-col h-[calc(100vh-90px)] text-center'>
                 <div className='text-3xl mb-[30px]'>Hi, I'm <span className='text-main font-extrabold'>Owen</span>. Welcome to my personal website.</div>
 
-                <div className='text-xl'>To view other websites I have created you can click <span className='text-secondary font-bold'><a href="/sites">sites</a></span> in the navigation bar.</div>
+                <div className='text-xl'>
+                    To view other websites I have created you can click&nbsp;
+                    <span className='text-secondary font-bold'>
+                        <a href="/sites" className='hover:underline'>
+                            sites
+                        </a>
+                    </span>
+                    &nbsp;in the navigation bar.
+                </div>
 
-                <div className='text-xl'>The <span className='text-secondary font-bold'><a href="/projects">projects</a></span> is currently a WIP, content will be added soon.</div>
+                <div className='text-xl'>The&nbsp;
+                    <span className='text-secondary font-bold'>
+                        <a href="/projects" className='hover:underline'>
+                            projects
+                        </a>
+                    </span>
+                    &nbsp;is currently a WIP, content will be added soon.
+                </div>
             </div>
 
         </div>
