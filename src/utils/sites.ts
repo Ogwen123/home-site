@@ -8,7 +8,7 @@ export const sites: SiteInfo[] = [
         url: "https://tracker.ogwen.eu.org",
         description: "Create repeatable tasks and track your progress. WIP",
         github_url: "https://github.com/Ogwen123/tracker-site",
-        colour: "#00796d"
+        colour: "#009788"
     },
     {
         id: 1,
@@ -46,10 +46,19 @@ export const sites: SiteInfo[] = [
         url: "https://ogwen.eu.org",
         description: "This website.",
         github_url: "https://github.com/Ogwen123/home-site",
-        colour: "#4a148c"
+        colour: "#009788"
     },
     {
         id: 5,
+        name: "admin-site",
+        alias: "Admin Site",
+        url: "https://admin.ogwen.eu.org",
+        description: "Site for managing all user accounts and services on ogwen.eu.org websites.",
+        github_url: "https://github.com/Ogwen123/admin-site",
+        colour: "#2563eb"
+    },
+    {
+        id: 6,
         name: "",
         alias: "Cards",
         url: "https://cards.benja.eu.org",

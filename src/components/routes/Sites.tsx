@@ -20,7 +20,7 @@ const Sites = () => {
                 })
             }
             <div className='flex justify-center text-4xl m-[10px]'>Shared Sites</div>
-            <div className='text-xs color-subtext'>These are sites I have developed in collaboration with other(s).</div>
+            <div className='text-xs text-subtext text-center'>These are sites I have developed in collaboration with others.</div>
             {
                 Object.values(sites).map((site, index) => {
                     if (!site.shared || (site.shared as boolean) === false) return

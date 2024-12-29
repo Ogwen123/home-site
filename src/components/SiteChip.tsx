@@ -15,7 +15,7 @@ const SiteChip = ({ site }: SiteChipProps) => {
         <div className='w-[calc(100%-40px)] h-[150px] mx-[20px] my-[10px] bg-bgdark rounded-md p-[20px] flex flex-row'>
             <div className='w-3/4'>
                 <div className='text-2xl' style={{ color: site.colour }}>{site.alias}</div>
-                <div className='text-md text-gray-500'>{site.description}</div>
+                <div className='text-md text-subtext'>{site.description}</div>
             </div>
             <div className='w-1/4 fc'>
                 <div className='w-1/2 mx-[10px]'>
